@@ -10,4 +10,7 @@ app.get('/', function(req, res){
 });
 app.listen(port, function(req, res){
     console.log("Server has started at port : "+port);
-})
+});
+app.get('/home', function(req, res){
+    res.send("Welcome!");
+});
