@@ -15,5 +15,6 @@ app.get('/home', function(req, res){
     res.send("Welcome!");
 });
 app.get('/login', function(req, res){
-    res.sendFile(dir+'/html/login.html');
+    // res.sendFile(dir+'/html/login.html');
+    res.render('login');
 })
