@@ -18,4 +18,7 @@ app.get('/home', function(req, res){
 app.get('/login', function(req, res){
     // res.sendFile(dir+'/html/login.html');
     res.render('login');
-})
+});
+app.get("/logout", function(req, res){
+    res.send("Logged Out Successfully!");
+});
