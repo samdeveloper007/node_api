@@ -2,6 +2,7 @@ var express= require('express');
 var cors= require('cors');
 var app= express();
 app.use(cors());
+app.set('view engine', 'ejs');
 const port= process.env.PORT || 3000;
 const apiData= require("./data.json");
 const dir= __dirname;
